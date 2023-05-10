@@ -57,9 +57,10 @@ p{
 .conteined{
     width: 100%;
     margin-top: 80px;
+    text-align: start;
     border: solid rgb(121, 121, 121) 1px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     background-color: black;
 }
@@ -135,30 +136,30 @@ p{
     /*Responsive Jumbo*/
 @media screen and (min-width:500px){
     .conteiner{ width: 100%;}
-    .conteined{align-items: center;margin-top: 80px;}
+    .conteined{;align-items: center;margin-top: 80px;}
 }
 @media screen and (min-width:576px) {
     .conteiner{width: 100%;}
-    .conteined{width: 500px; margin: 0 auto;margin-top: 80px;}
+    .conteined{;width: 500px; margin: 0 auto;margin-top: 80px;}
 }
 @media screen and (min-width:768px) {
-                .conteiner{width: 100%;}.conteined{;display: flex; flex-direction: row; width: 100%; }
+                .conteiner{width: 100%;}.conteined{;display: flex; flex-direction: row; width: 100%; justify-content: left;}
                 .pos_text{}
 }
 @media screen and (min-width:788px) {
     .conteiner{width: 100%;}
-    .conteined{display: flex; flex-direction: row; width: 100%;margin-top: 80px; }
+    .conteined{text-align: start;display: flex; flex-direction: row; width: 100%;margin-top: 80px; justify-content: left;}
     .pos_text{}
 }
 @media screen and (min-width:1024px){
     .conteiner{width: 100%;}
-    .conteined{margin-top: 80px;display: flex; flex-direction: row; width: 100%; }
+    .conteined{text-align: start;margin-top: 80px;display: flex; flex-direction: row; width: 100%; justify-content: left;}
     .pos_text{}
 }
 @media screen and (min-width:1194px){
     .conteiner{
      width: 70%;}
-    .conteined{margin-top: 80px;display: flex; flex-direction: row; width: 100%; }
+    .conteined{text-align: start;margin-top: 80px;display: flex; flex-direction: row; width: 100%; justify-content: left; }
     .pos_text{line-height: 30px;}
 }
 /*P-di forza*/
