@@ -17,203 +17,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bottstrap style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+          crossorigin="anonymous">
+    <!-- Bottstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- My style -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Gabriele Lombardo</title>
 </head>
 <body>
-    <!--navigation bar-->
-<header>
-    <div class="side_conteiner">
-              <button>
-                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
-              </button>
-              <div class="side_home">
-                <div class="side_link"><a href="#bio">Bio</a></div>
-                <div class="side_link"><a href="#formation">Formazione</a></div>
-                <div class="side_link"><a href="#esp">Esperienza</a></div>
-                <div class="side_link"><a href="#">Competenze</a></div>
-                <div class="side_link"><a href="#">Contattami</a></div>
-              </div>
+    <div class="container-fluid p-0 w-100">
+        <!--navigation bar-->
+        <header class="d-flex justify-content-center align-items-center">
+            <div class="d-none d-md-block">
+                <ul class="list-inline pt-3">
+                    <li class="list-inline-item ps-5 pe-5"><a class="text-white" href="#">BIO</a></li>
+                    <li class="list-inline-item ps-5 pe-5"><a class=" text-white" href="#">FORMAZIONE</a></li>
+                    <li class="list-inline-item ps-5 pe-5"><a class=" text-white" href="#">ESPERIENZA</a></li>
+                    <li class="list-inline-item ps-5 pe-5"><a class=" text-white" href="#">CONTATTAMI</a></li>
+                  </ul>
+            </div>
+            <div class="d-md-none">
+                <div class="collapse " id="navbarToggleExternalContent">
+                    <div class=" p-4">
+                      <ul>
+                        <li><a class="text-white" href="#">BIO</a></li>
+                        <li><a class="text-white" href="#">FORMAZIONE</a></li>
+                        <li><a class="text-white" href="#">ESPERIENZA</a></li>
+                        <li><a class="text-white" href="#">CONTATTAMI</a></li>
+                      </ul>
+                    </div>
+                </div>
+                  <nav class="navbar navbar-dark ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+        <!--Jumbo-->
+        <div class="container mt-5">
+            <div class="row pt-5 flex-column align-items-center justify-content-center flex-md-row">
+                <div class="col col-md-5 col-lg-4 rounded-3 p-4">
+                    <img class="img-fluid rounded-5" src="img/img1.png" alt="">
+                </div>
+                <div class="col col-md-6 col-lg-8">
+                    <p class="p-5 p-md-3 text-center">Grande spirito di adattamento. 
+                        Svolto tramite l’istituto superiore 8 ore di corso
+                        della sicurezza. Esperienze lavorative
+                        variegate (in campo sociale come animatore per 5 anni o 
+                        come aiutante in asili e scuole elementari, ma anche esperienze 
+                        manuali come Warehouse Operative presso Decathlon). 
+                        Attualmente frequento il corso di alta
+                        formazione Boolean per Full stack web developer. Nel mentre possiedo 
+                        anche un contratto intermittente con Decathlon Italia. Diplomato e munito di patente.
+                        Sono un ragazzo calmo e pacato, che davanti alle difficoltà 
+                        preferisce adottare strategie di problem solving piuttosto che dare di matto. </p>
+                </div>
+            </div>
         </div>
-</header>
-    <!--Jumbo-->
-    <div class="conteiner">
-        <section>
-            <div class="conteined">
-                <img id="bio" src="img/img1.png" alt="myphoto">
-                <div class="pos_text">
-                    <p>Grande spirito di adattamento. Svolto 
-                        tramite l’istituto superiore 8 ore di corso
-                        della sicurezza e 8 ore di corso di primo soccorso. 
-                        Esperienze lavorative variegate (in campo sociale come animatore 
-                        per 5 anni o come aiutante in asili e scuole elementari, 
-                        ma anche esperienze manuali come aiuto muratore o magaziniere). Diplomato e 
-                        munito di patente. Sono un ragazzo calmo e pacato, che davanti alle 
-                        difficoltà preferisce adottare
-                        strategie piuttosto che arrivare alla violenza.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined">
-                <img id="shadow" src="img/img2.jpg" alt="myphoto2">
-                <div class="pos_text">
-                    <p>Da qualche anno ho iniziato ad appassionarmi alla programmazione, 
-                        in quest'ambito ho frequentato diversi corsi da autodidatta e il corso intensivo 
-                        per full-stack developers di Boolean s.r.l</p>
-                </div>
-            </div>
-        </section>
-
+        
+    
         <!--Punti di forza-->
-        <section>
-            <div class="pos_text text_space">
-                <h2>Tre miei punti di forza:</h2>
-                <p><strong>La creatività;</strong> fin da piccolo sono sempre stato molto creativo, questa mia
-                    personalità mi ha portato a frequentare il biennio del liceo artistico dopo la
-                    scuola media per poi terminare i miei studi nell’ambito sociale, tramite i tirocini
-                    negli asili e le mie esperienze lavorative nei centri estivi ho potuto mettere in
-                    pratica progetti ideati da me con ottimi risultati</p>
-            </div>
-
-            <div class="pos_text">
-                <p><strong>Stabilità emotiva;</strong> come accennato precedentemente sono una persona
-                    calma e riflessiva, che davanti alle difficoltà preferisce analizzare i pro e i
-                    contro e soprattutto preferisce trovare una soluzione piuttosto che farsi
-                    prendere dall’ansia e andare in panico. </p>
-            </div>
-
-            <div class="pos_text">
-                <p><strong> Persuasione;</strong> sono sempre stato bravo a mettere insieme materiali e
-                    suggerimenti in modo da cogliere l’interesse o l’adesione dei miei
-                    interlocutori.</p>
-            </div>
-        </section>
-
+            
+    
         <!--Punti di debolezza-->
-        <section>
-            <div class="pos_text text_space">
-                <h2>Tre miei punti di debolezza:</h2>
-                <p><strong>Pignolo;</strong> quando si organizza un’incontro o un’attività sono molto scrupoloso
-                    nel rispettare gli orari o le decisioni prese, mi da molto fastidio quando le
-                    persone con cui hai preso accordi non li rispettano e arrivano all’incontro con
-                    mezz’ora di ritardo</p>
-            </div>
-
-            <div class="pos_text">
-                <p><strong>Timido;</strong> non ho mai avuto difficoltà a parlare e rapportarmi con persone
-                    appena conosciute, tuttavia con chi non conosco tendo a essere chiuso e a
-                    rapportarmi con loro solo se interpellato. </p>
-            </div>
-
-            <div class="pos_text">
-                <p id="formation"><strong>Scettico;</strong> quando le persone che mi stanno intorno cercano di darmi un
-                    consiglio, tendo a star accorto e puntualmente preferisco “sbatterci la testa”
-                    da solo e non per sentito dire. 
-                    </p>
-            </div>
-        </section>
-
+         
+    
         <!--Formazione-->
-
-
-        <div class="pos_text cont_space">
-            <h2>Formazione:</h2>
-        </div>
-
-        <section>
-            <div class="conteined ">
-                <img src="img/diploma.png" alt="myphoto">
-                <div class="pos_text">
-                    <h4>Diploma di scuola superiore in servizi socio sanitari</h4>
-                    <p>Conseguito nell' Anno Sco. 2021/2022 con votazione 70/100</p>
-                </div>
-            </div>
-        </section>
-
+    
+    
+    
+        <!--Esperienza-->
+    </div>
 
         
-        <section>
-            <div class="conteined ">
-                <img src="img/cert1.jpg" alt="myphoto">
-                <div class="pos_text">
-                    <h4>HTML e CSS</h4>
-                    <p>Certificato di completamento conseguito tramite Udemy.com</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <img src="img/cert2.jpg" alt="myphoto">
-                <div class="pos_text">
-                    <h4>JavaScript</h4>
-                    <p>Certificato di completamento conseguito tramite Udemy.com</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <img src="img/cert3.jpg" alt="myphoto">
-                <div class="pos_text">
-                    <h4>Python</h4>
-                    <p>Certificato di completamento conseguito tramite Udemy.com</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Esperienza-->
-
-        <div id="esp" class="pos_text cont_space">
-            <h2>Esperienza:</h2>
-        </div>
-
-        <section>
-            <div class="conteined ">
-                <div class="pos_text">
-                    <h4>Warehouse Operative (settembre 2022 - attuale)</h4>
-                    <p>Presso Decathlon Italia Brandizzo, 7 mesi con un contratto part-time. Da Aprile con un contratto intermittente</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <div class="pos_text">
-                    <h4>Animatore (Luglio 2017 - Luglio 2022)</h4>
-                    <p>Presso Parrocchia santi Eusebio e secondo Cavagnolo(TO), Svolto per 4 anni nel mese di Luglio. Non nel 2020 e nel 2021 a causa del covid19</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <div class="pos_text">
-                    <h4>Studente tirocinante</h4>
-                    <p>Presso Regina Pacis Vercelli(VC), aiuto maestra dell'infanzia</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <div class="pos_text">
-                    <h4>Animatore (Giugno 2021 - Luglio 2021)</h4>
-                    <p>Presso Help cooperativa sociale Castagneto Po (TO)</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="conteined ">
-                <div class="pos_text">
-                    <h4>Studente tirocinante</h4>
-                    <p>Presso Scuole cristiane Vercelli(VC), aiuto maestra delle elementari</p>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -222,8 +109,9 @@
       
 
         
-    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 </body>
 </html>

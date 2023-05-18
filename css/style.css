@@ -5,173 +5,29 @@
  box-sizing: border-box;
 }
 /*Pseudo classi*/
-button:focus + .side_home{
-    display: block;
-}
-input[type="button"]{
-    cursor: pointer;
-}
+
 /*Generics*/
 body{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 header{
+    width: 100%;
     font-family: 'Lobster', cursive;
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
     top: 0;
-    z-index: 1;
-    box-shadow: -1px 5px 3px -1px rgba(255,255,255,0.25);
--webkit-box-shadow: -1px 5px 3px -1px rgba(255,255,255,0.25);
--moz-box-shadow: -1px 5px 3px -1px rgba(255,255,255,0.25);
+    margin-bottom: 200px;
 }
-button{
-    border: none;
-    background-color: rgb(0, 0, 0);
+ul{
+    list-style: none;
+    
 }
 a{
     text-decoration: none;
-    color: white;
-}
-img{
-    width: 400px;
-	object-fit: fill; contain; 
-    border: none;
-    
-    border-radius: 10px; 
-}
-h2{
-    padding: 10px;
-    color: rgb(209, 209, 209);
-}
-p{
-    padding: 10px;
-    color: white;
 }
 /*Utilties*/
-.conteiner{
-    width: 700px;
-    margin: 0 auto;
-    border: solid rgb(22, 22, 22) 1px;
+.container{
+    border: solid red 1px;
     
-}
-.conteined{
-    width: 100%;
-    margin-top: 80px;
-    text-align: start;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    background-color: rgb(22, 22, 22);
-}
-.fa-bars{
-    padding: 20px;
-}
-.side_conteiner{
-    text-align: center;
-    background-color: black;
-    width: 100%;
-    color: rgb(95, 95, 95);
-}
-/*Navbar*/
-.side_home{
-    background-color: rgb(0, 0, 0);
-    width: 200px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    display: none;
-   }
-.side_link{
-    padding: 5px;
-    border-top: solid rgb(95, 95, 95) 1px;
-}
-.side_link:hover{
-    color: white;
-    text-shadow: 0 0 5px;
-}
-
-/*Responsive Navbar*/
-@media screen and (min-width:480px){
-    .side_conteiner{
-        width: 100%;}
-}
-@media screen and (min-width:576px) {
-    .conteiner{
-        width: 100%;}
-    }
-@media screen and (min-width:768px) {
-        .conteiner{width: 100%;}
-        .side_home{width: 700px;
-                   display: flex;
-                   flex-wrap: wrap;
-                   justify-content: space-between;
-                   gap: 10px;}
-.fa-bars{
-        display: none;}
-}
-@media screen and (min-width:1024px){
-    .conteiner{
-        width: 100%;}
-        .side_home{
-        width: 700px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
-    }
-        .fa-bars{
-        display: none;}
-    }
-    /*Jumbo*/
-    .pos_text{
-        background-color: rgb(22, 22, 22);
-    }
-    #shadow{
-        filter: drop-shadow(0px 0px 27px #000000);
-        -webkit-filter: drop-shadow(0px 0px 27px #000000);
-        -moz-filter: drop-shadow(0px 0px 27px #000000);
-        border-radius: 10px; 
-    }
-    .pos_text{font-size: 25px;}
-    /*Responsive Jumbo*/
-@media screen and (min-width:500px){
-    .conteiner{ width: 100%;}
-    .conteined{;align-items: center;margin-top: 80px;}
-}
-@media screen and (min-width:576px) {
-    .conteiner{width: 100%;}
-    .conteined{;width: 500px; margin: 0 auto;margin-top: 80px;}
-}
-@media screen and (min-width:768px) {
-                .conteiner{width: 100%;}.conteined{;display: flex; flex-direction: row; width: 100%; justify-content: left;}
-                .pos_text{}
-}
-@media screen and (min-width:788px) {
-    .conteiner{width: 100%;}
-    .conteined{text-align: start;display: flex; flex-direction: row; width: 100%;margin-top: 80px; justify-content: left;}
-    .pos_text{}
-}
-@media screen and (min-width:1024px){
-    .conteiner{width: 100%;}
-    .conteined{text-align: start;margin-top: 80px;display: flex; flex-direction: row; width: 100%; justify-content: left;}
-    .pos_text{}
-}
-@media screen and (min-width:1194px){
-    .conteiner{
-     width: 70%;}
-    .conteined{text-align: start;margin-top: 80px;display: flex; flex-direction: row; width: 100%; justify-content: left; }
-    .pos_text{line-height: 30px;}
-}
-/*P-di forza*/
-.text_space{
-    margin-top: 50px;
-}
-/*section*/
-.cont_space{
-    margin-top: 40px;
-    position: relative;
-    top: 50px;
-}
-h4{
-    color: white;
-    padding: 10px;
 }
