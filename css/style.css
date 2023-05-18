@@ -27,7 +27,13 @@ a{
     text-decoration: none;
 }
 /*Utilties*/
+/*
 .container{
     border: solid red 1px;
-    
+}
+.row{
+    border: solid rgb(0, 255, 221) 1px;
+}
+.col{
+    border: solid rgb(246, 255, 0) 1px;
 }
